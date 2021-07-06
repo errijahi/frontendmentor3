@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+body {
+  background-color: #ecf2f8;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  max-width: 50vw;
+  background-color: white;
+  margin-top: 33vh;
+  margin-left: 25vw;
+  margin-right: 5vw;
+  border-radius: 0.5em;
+  font-family: "Manrope", sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.box .drawers {
+  width: 40%;
+  border-top-left-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+}
+
+.box .text {
+  width: 60%;
+}
+
+.box .text h1 {
+  font-size: 1.5vw;
+  margin-left: 2vw;
+  margin-top: 2vw;
+  margin-right: 2vw;
+  color: #48556a;
+}
+
+.box .text p {
+  font-size: 0.99vw;
+  margin-left: 2vw;
+  margin-top: 0.5vw;
+  margin-right: 2vw;
+  color: #48556a;
+}
+
+.box .text .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.box .text .grid .avatar {
+  border-radius: 50%;
+  width: 3vw;
+  transform: translateY(2vh);
+  margin-left: 2vw;
+}
+
+.box .text .grid .name {
+  grid-column: 2/4;
+  transform: translateX(-3.5vw);
+  height: 2vw;
+  margin-top: 1vw;
+  font-weight: 700;
+}
+
+.box .text .grid .date {
+  grid-column: 2/4;
+  transform: translateX(-3.5vw);
+  margin-top: -0.5vw;
+  height: 2vw;
+}
+
+.box .text .grid .share-noneactive {
+  width: 2vw;
+  transform: translatey(-1vw);
+  margin-left: 3vw;
+  background-color: #ecf2f8;
+  border-radius: 50%;
+  padding: 0.3vw;
+  cursor: pointer;
+}
+
+.box .text .grid .share-active {
+  width: 2vw;
+  transform: translatey(-1.5vh);
+  margin-left: 3vw;
+  background-color: #9eafc2;
+  filter: invert(80%) sepia(500%) saturate(15%) hue-rotate(188deg) brightness(103%) contrast(502%);
+  border-radius: 50%;
+  padding: 0.3vw;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .box {
+    flex-direction: column;
+    max-width: 40vw;
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .box .drawers {
+    width: 100%;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0.5em;
+  }
+  .box .text {
+    width: 100%;
+    margin-left: 1vw;
+    margin-right: 3vw;
+  }
+  .box .text h1 {
+    font-size: 2.1vw;
+    margin-top: 3vw;
+    margin-right: 4vw;
+  }
+  .box .text p {
+    margin-right: 4vw;
+    margin-top: 1vw;
+    font-size: 1.73vw;
+  }
+  .box .text .grid {
+    height: 9vw;
+    margin-top: 2vw;
+  }
+  .box .text .grid .name {
+    width: 16vw;
+    transform: translateX(-2.5vw);
+    margin-top: 2vw;
+    height: 3vw;
+  }
+  .box .text .grid .date {
+    transform: translateX(-2.5vw);
+    margin-top: -1vw;
+    height: 3vw;
+  }
+  .box .text .grid .avatar {
+    width: 5vw;
+    transform: translateY(2vw);
+  }
+  .box .text .grid .share-noneactive {
+    transform: translatey(-1.8vw);
+    width: 4vw;
+    margin-left: 0vw;
+  }
+  .box .text .grid .share-active {
+    transform: translatey(-1.2vw);
+    width: 4vw;
+    margin-left: 0vw;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .box {
+    flex-direction: column;
+    max-width: none;
+    width: 70vw;
+    margin-bottom: 10vh;
+    margin-top: 90%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .box .drawers {
+    width: 100%;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0.5em;
+  }
+  .box .text {
+    width: 100%;
+    margin-left: 1vw;
+    margin-right: 3vw;
+  }
+  .box .text h1 {
+    font-size: 3.5vw;
+    margin-top: 6vw;
+    margin-right: 6vw;
+    margin-left: 6vw;
+  }
+  .box .text p {
+    margin-right: 6vw;
+    margin-left: 6vw;
+    margin-top: 2.5vw;
+    font-size: 2.95vw;
+  }
+  .box .text .grid {
+    height: 15vw;
+    margin-top: 2vw;
+    margin-left: 4vw;
+  }
+  .box .text .grid .name {
+    width: 29vw;
+    transform: translateX(-8vw);
+    margin-top: 2vw;
+    height: 3vw;
+  }
+  .box .text .grid .date {
+    transform: translateX(-8vw);
+    margin-top: -3.5vw;
+    height: 3vw;
+  }
+  .box .text .grid .avatar {
+    width: 10vw;
+    transform: translateY(2vw);
+  }
+  .box .text .grid .share-noneactive {
+    transform: translatey(-5.8vw);
+    width: 8vw;
+    margin-left: 0vw;
+  }
+  .box .text .grid .share-active {
+    transform: translatey(-5vw);
+    width: 8vw;
+    margin-left: 0vw;
+    z-index: 1;
+  }
+}

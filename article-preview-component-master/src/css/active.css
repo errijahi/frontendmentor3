@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+.box2 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 38vw;
+  width: 16%;
+  z-index: 1;
+}
+
+.box2 .hover {
+  display: flex;
+  background-color: #48556a;
+  padding: 1vw;
+  border-radius: 0.5em;
+}
+
+.box2 .hover p {
+  color: #9eafc2;
+  text-transform: uppercase;
+  letter-spacing: 0.3vw;
+  margin-left: 1.5vw;
+  font-size: 1vw;
+}
+
+.box2 .hover .Facebook {
+  margin-left: 1vw;
+}
+
+.box2 .hover img {
+  width: 1.5vw;
+  margin-right: 1vw;
+}
+
+.box2 .arrow-down {
+  margin-top: -1vh;
+  margin-left: 7vw;
+  width: 0;
+  height: 0;
+  border-left: 1.5vw solid transparent;
+  border-right: 1.5vw solid transparent;
+  border-top: 1.5vw solid #48556a;
+}
+
+@media screen and (max-width: 1000px) {
+  .box2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0vw;
+    margin-top: 148.5%;
+    width: 100%;
+  }
+  .box2 .hover {
+    padding: 2.9vw;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  .box2 .hover p {
+    font-size: 1.73vw;
+    margin-right: 0.3vw;
+    transform: translateY(0.3vw);
+    letter-spacing: 0.6vw;
+  }
+  .box2 .hover img {
+    max-width: none;
+    height: 2.5vw;
+    width: 2.5vw;
+    margin-right: 1.5vw;
+  }
+  .box2 .arrow-down {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .box2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0vw;
+    margin-top: 146.5%;
+    width: 100%;
+  }
+  .box2 .hover {
+    padding: 3.8vw;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  .box2 .hover p {
+    font-size: 3.25vw;
+    margin-right: 1vw;
+    transform: translateY(0.3vw);
+    letter-spacing: 1vw;
+  }
+  .box2 .hover img {
+    max-width: none;
+    height: 6vw;
+    width: 5vw;
+    margin-right: 2.5vw;
+  }
+}
